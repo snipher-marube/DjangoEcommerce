@@ -141,6 +141,9 @@ class RequestResetEmailView(View):
             EmailThread(email_message).start()
             messages.success(request, "We have sent you an email with instructions on how to reset password")
             return render(request, 'smarketauth/request-reset-email.html')
+        else:
+            messages.error(request, 'User with this email does not exist')
+            return redirect('request-reset-email')
 
 class SetNewPasswordView(View):
     def get(self, request, uidb64, token):
