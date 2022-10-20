@@ -1,5 +1,5 @@
 {% extends 'smarketauth/main.html' %}
-{% block title %}Login{% endblock %}
+{% block title %}Reset password{% endblock %}
 {% load static %}
 {% block content %}
     <div class="half">
@@ -11,31 +11,26 @@
                     <div class="col-md-6">
                         <div class="form-block">
                             <div class="text-center mb-5">
-                                <h3>Login</h3>
+                                <h3>Reset Password</h3>
 
                             </div>
 
                             {% include 'includes/messages.html' %}
-                            <form action="{% url 'login' %}" method="post">
+                            <form action="{% url 'request-reset-email' %}" method="post">
                                 {% csrf_token %}
                                 <div class="form-group first">
                                     <label for="name">Email</label>
-                                    <input type="email" class="form-control" placeholder="your-email@gmail.com" id="name" name="username" required>
+                                    <input type="email" class="form-control" placeholder="your-email@gmail.com" id="name" name="email" required>
                                 </div>
-
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" placeholder="Your Password" id="password" name="password" required>
-                                </div>
-
 
                                 <div class="d-sm-flex mb-5 align-items-center">
-                                    <span class="ml-auto"><a href="{% url 'request-reset-email' %}" class="forgot-pass">Forgot Password?</a></span>
-                                    <span class="ml-auto"><a href="{% url 'signup' %}" class="forgot-pass">Have no account? Sign Up</a></span>
+                                    <span class="ml-auto">
+                                        <a href="{% url 'login' %}" class="forgot-pass">Go back</a>
+                                    </span>
 
                                 </div>
 
-                                <input type="submit" value="Register" class="btn btn-block btn-primary">
+                                <input type="submit" value="Submit" class="btn btn-block btn-primary">
                             </form>
 
                         </div>
@@ -47,3 +42,4 @@
 
     </div>
 {% endblock %}
+
