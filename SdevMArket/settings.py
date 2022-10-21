@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'marketapp.apps.MarketappConfig',
     'smarketauth.apps.SmarketauthConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [

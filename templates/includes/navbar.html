@@ -55,7 +55,7 @@
                     <!-- Logo -->
                     <div class="logo">
                         <a href="{% url 'home' %}">
-                            <img src="{% static 'images/logo.png' %}" alt="logo"></a>
+                            <img src="{% static 'images/logo22.png' %}" alt="logo"></a>
                     </div>
                     <!--/ End Logo -->
                     <!-- Search Form -->
@@ -115,7 +115,7 @@
                             <div class="shopping-item">
                                 <div class="dropdown-cart-header">
                                     <span>2 Items</span>
-                                    <a href="#">View Cart</a>
+                                    <a href="{% url 'cart' %}">View Cart</a>
                                 </div>
                                 <ul class="shopping-list">
                                     <li>
@@ -136,7 +136,7 @@
                                         <span>Total</span>
                                         <span class="total-amount">$134.00</span>
                                     </div>
-                                    <a href="#" class="btn animate">Checkout</a>
+                                    <a href="{% url 'checkout' %}" class="btn animate">Checkout</a>
                                 </div>
                             </div>
                             <!--/ End Shopping Item -->
@@ -233,7 +233,7 @@
                                             <li><a href="#">Service</a></li>
                                             <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
                                                 <ul class="dropdown">
-                                                    <li><a href="#">Shop Grid</a></li>
+                                                    <li><a href="{% url 'shop' %}">Shop Grid</a></li>
                                                     <li><a href="{% url 'cart' %}">Cart</a></li>
                                                     <li><a href="{% url 'checkout' %}">Checkout</a></li>
                                                 </ul>
