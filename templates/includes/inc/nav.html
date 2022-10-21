@@ -169,17 +169,17 @@
                                             <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
                                                 <ul class="dropdown">
                                                     <li><a href="#">Shop Grid</a></li>
-                                                    <li><a href="#">Cart</a></li>
-                                                    <li><a href="#">Checkout</a></li>
+                                                    <li><a href="{% url 'cart' %}">Cart</a></li>
+                                                    <li><a href="{% url 'checkout' %}">Checkout</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Pages</a></li>
                                             <li><a href="#">Blog<i class="ti-angle-down"></i></a>
                                                 <ul class="dropdown">
-                                                    <li><a href="#">Blog Single Sidebar</a></li>
+                                                    <li><a href="{% url 'blog' %}">Blog Single Sidebar</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
