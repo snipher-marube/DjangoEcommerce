@@ -9,7 +9,7 @@
                     <div class="top-left">
                         <ul class="list-main">
                             <li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
-                            <li><i class="ti-email"></i> support@shophub.com</li>
+                            <li><i class="ti-email"></i> support@smarket.com</li>
                         </ul>
                     </div>
                     <!--/ End Top Left -->
@@ -25,15 +25,16 @@
                                 <i class="ti-alarm-clock"></i>
                                 <a href="#">Daily deal</a>
                             </li>
-                            <li><i class="ti-user"></i>
-                                <a href="#">My account</a>
-                            </li>
 
                             {% if user.is_authenticated %}
+                                <li><i class="ti-user"></i>
+                                    <a href="#">My account</a>
+                                </li>
                                 <li>
                                     <i class="ti-shift-right-alt"></i>
                                     <a href="{% url 'logout' %}">Logout</a>
                                 </li>
+
                             {% else %}
                                 <li>
                                     <i class="ti-power-off"></i>
