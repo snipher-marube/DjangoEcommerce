@@ -2919,7 +2919,7 @@ function copyRegex(regex, options) {
         }
         // null or undefined; don't want to add to `flags` if the previous value was null, since
         // that indicates we're not tracking original precompilation flags
-        if (xData.flags != null) {
+        if (xData.flags !== null) {
             // Flags are only added for non-internal regexes by `XRegExp.globalize`. Flags are never
             // removed for non-internal regexes, so don't need to handle it
             xregexpFlags = flagsToAdd ? clipDuplicates(xData.flags + flagsToAdd) : xData.flags;
@@ -3247,7 +3247,7 @@ function setNatives(on) {
  */
 function toObject(value) {
     // null or undefined
-    if (value == null) {
+    if (value === null) {
         throw new TypeError('Cannot convert null or undefined to object');
     }
 
@@ -4311,7 +4311,7 @@ fixed.replace = function(search, replacement) {
     } else {
         // Ensure that the last value of `args` will be a string when given nonstring `this`,
         // while still throwing on null or undefined context
-        result = nativ.replace.call(this == null ? this : String(this), search, function() {
+        result = nativ.replace.call(this === null ? this : String(this), search, function() {
             // Keep this function's `arguments` available through closure
             var args = arguments;
             return nativ.replace.call(String(replacement), replacementToken, function($0, $1, $2) {
