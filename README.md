@@ -1,12 +1,19 @@
 # SdevMarketEcommerce
 <h1>Django e-commerce<h1/>
 <h2>Features to have<h2/>
-1. 100% Authentication
-        --->reset password feature
-        --->gmail activation account link
-2. Shop Page
-3. Add to Cart
-4. Categories
-5. Update and delete from cart
-6. checkout
-7. shipping address 
+        <ul>
+                <li>1. 100% Authentication<li/>
+                <li>2. Shop Page<li/>
+                <li>3. Add to Cart<li/>
+                <li>3. Categories<li/>
+                <li>5. Update and delete from cart<li/>
+                <li>7. shipping address <li/>
+                <li>6. checkout<li/>
+        <ul/>
+
+
+
+
+
+
+
