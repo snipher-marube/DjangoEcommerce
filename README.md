@@ -1,5 +1,5 @@
 # SdevMarketEcommerce
-<h1>Django e-commerce<h1/>
+<img href='https://github.com/snipher-marube/DjangoEcommerce/blob/master/static/images/logo33.png'>
 <h2>Features to have<h2/>
         <ul>
                 <li>1. 100% Authentication<li/>
